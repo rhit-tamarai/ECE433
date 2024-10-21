@@ -3,7 +3,7 @@
 //This is a template from the instructor
 //File Name: I2C_Host_Controller_phase1_temp.v
 //This is a template to be completed by students
-//Author: Jianjian Song (change to your names)
+//Author: Ishaan Tamarapalli, Andrew Zamora 
 //Date: October 13, 2024
 //ECE433 Fall 2024
 //ControllerI2C for I2C Master Circuit
