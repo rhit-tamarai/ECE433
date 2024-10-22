@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab7ece433.srcs/sources_1/imports/lab7phase1Fall2024source files/DelayLoop2024Fall.v" \
+"../../../../lab7ece433.srcs/sources_1/imports/lab7phase1Fall2024source files/I2C_BaudRateGenerator.v" \
+"../../../../lab7ece433.srcs/sources_1/imports/lab7phase1Fall2024source files/I2C_DataUnit.v" \
+"../../../../lab7ece433.srcs/sources_1/imports/lab7phase1Fall2024source files/I2C_Host_Controller_phase1_temp.v" \
+"../../../../lab7ece433.srcs/sources_1/imports/lab7phase1Fall2024source files/I2C_SDAmodule_temp.v" \
+"../../../../lab7ece433.srcs/sources_1/imports/lab7phase1Fall2024source files/I2C_ShiftRegister.v" \
+"../../../../lab7ece433.srcs/sources_1/imports/lab7phase1Fall2024source files/Lab7I2Cphase1Fall2024JJS.v" \
+"../../../../lab7ece433.srcs/sources_1/imports/lab7phase1Fall2024source files/NegativeClockedOneShot.v" \
+"../../../../lab7ece433.srcs/sources_1/imports/lab7phase1Fall2024source files/PositiveClockedOneShot.v" \
+"../../../../lab7ece433.srcs/sources_1/imports/lab7phase1Fall2024source files/Lab7phase1overall2024fall_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

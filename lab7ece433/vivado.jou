@@ -1,0 +1,181 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Oct 22 12:32:50 2024
+# Process ID: 4120
+# Current directory: C:/Xilinx/ECE433Fall2024labs/lab7ece433/lab7ece433
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35080 C:\Xilinx\ECE433Fall2024labs\lab7ece433\lab7ece433\lab7ece433.xpr
+# Log file: C:/Xilinx/ECE433Fall2024labs/lab7ece433/lab7ece433/vivado.log
+# Journal file: C:/Xilinx/ECE433Fall2024labs/lab7ece433/lab7ece433\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx/ECE433Fall2024labs/lab7ece433/lab7ece433/lab7ece433.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+open_project C:/Xilinx/ECE433Fall2024labs/lab5ece433/lab5ece433_stopwatch/lab5ece433_stopwatch.xpr
+update_compile_order -fileset sources_1
+current_project lab7ece433
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top I2C_SDAmodule_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source I2C_SDAmodule_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top I2C_DataUnit_tb [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top I2C_DataUnit [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top I2C_Host_Controller_phase1_tb [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top I2C_Host_Controller_phase1 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DelayLoop2024Fall [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top I2C_Host_Controller_phase1 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+open_project C:/Xilinx/ECE433Fall2024labs/lab6ece433/lab6ece433fall2024/lab6ece433fall2024.xpr
+update_compile_order -fileset sources_1
+close_project
+close_project
+open_project C:/Xilinx/ECE433Fall2024labs/lab3/project_1.xpr
+update_compile_order -fileset sources_1
+current_project lab7ece433
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top I2C_Host_Controller_phase1_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top I2C_BaudRateGenerator [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+refresh_design
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top I2C_Host_Controller_phase1 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+launch_simulation
+close_sim
+launch_simulation
+source I2C_Host_Controller_phase1_tb.tcl
+close_sim
+launch_simulation
+source I2C_Host_Controller_phase1_tb.tcl
+current_wave_config {Untitled 3}
+add_wave {{/I2C_Host_Controller_phase1_tb/uut/DelayUnit}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 3}
+add_wave {{/I2C_Host_Controller_phase1_tb/uut/DelayUnit}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Lab7I2Cphase1fall2024JJS_tb [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Lab7I2Cphase1fall2024JJS_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+close_sim
+launch_simulation
+source Lab7I2Cphase1fall2024JJS_tb.tcl
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Lab7I2Cphase1fall2024JJS [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+close_sim
+launch_simulation
+source Lab7I2Cphase1fall2024JJS_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Lab7I2Cphase1fall2024JJS_tb [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+refresh_design
+update_compile_order -fileset sources_1
+refresh_design
+refresh_design
+launch_simulation
+source Lab7I2Cphase1fall2024JJS_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top I2C_Host_Controller_phase1_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+relaunch_sim
+close_sim
+launch_simulation
+source I2C_Host_Controller_phase1_tb.tcl
