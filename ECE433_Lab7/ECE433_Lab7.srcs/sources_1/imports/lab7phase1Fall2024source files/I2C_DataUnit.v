@@ -25,6 +25,6 @@ I2C_ShiftRegister ShiftUnit(Reset,clock, WriteLoad, ShiftorHold, ShiftIn, SentDa
 //module I2C_SDAmodule(input ReadorWrite, Select, StartStopAck, ShiftOut,
 //output ShiftIn, inout SDA);
 
-I2C_SDAmodule SDAUnit(ReadorWrite, Select, StartStopAck, ShiftOut, ShiftIn, SDA) ;
+I2C_SDAmodule SDAUnit(ReadorWrite, Select, StartStopAck, ShiftOut, ShiftIn, SDA);
 
 endmodule

@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/ECE433/ECE433_Lab7/ECE433_Lab7.srcs/sources_1/imports/lab7phase1Fall2024source files/I2C_DataUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module I2C_DataUnit
+INFO: [VRFC 10-2458] undeclared symbol ShiftIn, assumed default net type wire [C:/Xilinx/ECE433/ECE433_Lab7/ECE433_Lab7.srcs/sources_1/imports/lab7phase1Fall2024source files/I2C_DataUnit.v:23]
+INFO: [VRFC 10-2458] undeclared symbol ShiftOut, assumed default net type wire [C:/Xilinx/ECE433/ECE433_Lab7/ECE433_Lab7.srcs/sources_1/imports/lab7phase1Fall2024source files/I2C_DataUnit.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Xilinx/ECE433/ECE433_Lab7/ECE433_Lab7.srcs/sources_1/imports/lab7phase1Fall2024source files/I2C_DataUnit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module I2C_DataUnit_tb
