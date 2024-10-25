@@ -67,6 +67,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/DelayLoop2024Fall.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/DelayLoop2024Fall.v"/>
+          <Attr Name="ImportTime" Val="1729052916"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/DisplayMuxNexysA7.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/DisplayMuxNexysA7.v"/>
@@ -94,6 +103,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/I2C_Host_Controller_phase2_temp.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/I2C_Host_Controller_phase2_temp.v"/>
+          <Attr Name="ImportTime" Val="1729273640"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/I2C_SDAmodule.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/I2C_SDAmodule.v"/>
@@ -107,6 +125,15 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/I2C_ShiftRegister.v"/>
           <Attr Name="ImportTime" Val="1728868130"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/NegativeClockedOneShot.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/NegativeClockedOneShot.v"/>
+          <Attr Name="ImportTime" Val="1728868108"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -166,16 +193,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/DelayLoop2024Fall.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/DelayLoop2024Fall.v"/>
-          <Attr Name="ImportTime" Val="1729052916"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/I2C_BaudRateGenerator_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -206,16 +223,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/I2C_Host_Controller_phase2_temp.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/I2C_Host_Controller_phase2_temp.v"/>
-          <Attr Name="ImportTime" Val="1729273640"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/I2C_SDAmodule_tb.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -231,16 +238,6 @@
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/I2C_ShiftRegister_tb.v"/>
           <Attr Name="ImportTime" Val="1729049997"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/NegativeClockedOneShot.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/NegativeClockedOneShot.v"/>
-          <Attr Name="ImportTime" Val="1728868108"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
