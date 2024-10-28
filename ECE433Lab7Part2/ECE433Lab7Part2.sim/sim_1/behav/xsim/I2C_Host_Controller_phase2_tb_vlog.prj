@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/DelayLoop2024Fall.v" \
+"../../../../ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/I2C_Host_Controller_phase2_temp.v" \
+"../../../../ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/NegativeClockedOneShot.v" \
+"../../../../ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/PositiveClockedOneShot.v" \
+"../../../../ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/I2C_Host_Controller_phase2_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

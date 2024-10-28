@@ -1,0 +1,10 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Xilinx/ECE433/Lab7/ECE433/ECE433Lab7Part2/ECE433Lab7Part2.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Xilinx/ECE433/Lab7/ECE433/ECE433Lab7Part2/ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/DelayLoop2024Fall.v,1729052916,verilog,,C:/Xilinx/ECE433/Lab7/ECE433/ECE433Lab7Part2/ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/I2C_Host_Controller_phase2_temp.v,,DelayLoop2024Fall,,,,,,,,
+C:/Xilinx/ECE433/Lab7/ECE433/ECE433Lab7Part2/ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/I2C_Host_Controller_phase2_tb.v,1729049718,verilog,,,,I2C_Host_Controller_phase2_tb,,,,,,,,
+C:/Xilinx/ECE433/Lab7/ECE433/ECE433Lab7Part2/ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/I2C_Host_Controller_phase2_temp.v,1730131386,verilog,,C:/Xilinx/ECE433/Lab7/ECE433/ECE433Lab7Part2/ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/NegativeClockedOneShot.v,,I2C_Host_Controller_phase2,,,,,,,,
+C:/Xilinx/ECE433/Lab7/ECE433/ECE433Lab7Part2/ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/NegativeClockedOneShot.v,1728868108,verilog,,C:/Xilinx/ECE433/Lab7/ECE433/ECE433Lab7Part2/ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/PositiveClockedOneShot.v,,NegativeClockedOneShot,,,,,,,,
+C:/Xilinx/ECE433/Lab7/ECE433/ECE433Lab7Part2/ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/PositiveClockedOneShot.v,1728874182,verilog,,C:/Xilinx/ECE433/Lab7/ECE433/ECE433Lab7Part2/ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/I2C_Host_Controller_phase2_tb.v,,PositiveClockedOneShot,,,,,,,,

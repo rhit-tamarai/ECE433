@@ -118,7 +118,7 @@ always@(posedge clock)
 
 
 //output block
-always @(State) begin
+always @(State or OneShotNegative) begin
     case(State)
     InitialState: begin
         BaudEnable <= 0;
@@ -128,6 +128,7 @@ always @(State) begin
         ShiftorHold <= 0;
         StartStopAck <= 0;
         StartDelayLoop <= 0;
+        DONE <= 0;
      end    
      StartState: begin  
         BaudEnable <= 0;
