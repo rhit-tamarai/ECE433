@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../ECE433Lab7Part2.srcs/sources_1/ip/Clock80MHz" \
+"../../../../ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/I2C_BaudRateGenerator.v" \
+"../../../../ECE433Lab7Part2.srcs/sources_1/imports/lab7phase2Fall2024source files/I2C_BaudRateGenerator_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

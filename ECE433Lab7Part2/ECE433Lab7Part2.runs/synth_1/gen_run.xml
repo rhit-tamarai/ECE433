@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1730233658">
+  <File Type="PA-TCL" Name="Lab7I2Cphase2fall2024JJS.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Lab7I2Cphase2fall2024JJS_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Lab7I2Cphase2fall2024JJS_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Lab7I2Cphase2fall2024JJS.vds"/>
+  <File Type="RDS-UTIL" Name="Lab7I2Cphase2fall2024JJS_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Lab7I2Cphase2fall2024JJS_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Lab7I2Cphase2fall2024JJS.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Lab7I2Cphase2fall2024JJS_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Lab7I2Cphase2fall2024JJS_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/BCDto7Segment.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/BCDto7Segment.v"/>
+        <Attr Name="ImportTime" Val="1728874182"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/DelayLoop2024Fall.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/DelayLoop2024Fall.v"/>
+        <Attr Name="ImportTime" Val="1729052916"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/DisplayMuxNexysA7.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/DisplayMuxNexysA7.v"/>
+        <Attr Name="ImportTime" Val="1728874182"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/I2C_BaudRateGenerator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/I2C_BaudRateGenerator.v"/>
+        <Attr Name="ImportTime" Val="1728868126"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/I2C_DataUnit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/I2C_DataUnit.v"/>
+        <Attr Name="ImportTime" Val="1728868130"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/I2C_Host_Controller_phase2_temp.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/I2C_Host_Controller_phase2_temp.v"/>
+        <Attr Name="ImportTime" Val="1729273640"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/I2C_SDAmodule.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/I2C_SDAmodule.v"/>
+        <Attr Name="ImportTime" Val="1728868130"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/I2C_ShiftRegister.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/I2C_ShiftRegister.v"/>
+        <Attr Name="ImportTime" Val="1728868130"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/NegativeClockedOneShot.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/NegativeClockedOneShot.v"/>
+        <Attr Name="ImportTime" Val="1728868108"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/OneTemperatureConverter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/OneTemperatureConverter.v"/>
+        <Attr Name="ImportTime" Val="1728874182"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/PositiveClockedOneShot.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/PositiveClockedOneShot.v"/>
+        <Attr Name="ImportTime" Val="1728874182"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/ReadTMP101fall2024JJS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/ReadTMP101fall2024JJS.v"/>
+        <Attr Name="ImportTime" Val="1728874052"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/Refreshing7SegNexysA7.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/Refreshing7SegNexysA7.v"/>
+        <Attr Name="ImportTime" Val="1728874176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/SevenSegDriverNexysA7.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/SevenSegDriverNexysA7.v"/>
+        <Attr Name="ImportTime" Val="1729737723"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/Lab7I2Cphase2fall2024JJS.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/Lab7I2Cphase2fall2024JJS.v"/>
+        <Attr Name="ImportTime" Val="1729273629"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/I2C_Host_Controller_phase2_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/I2C_Host_Controller_phase2_tb.v"/>
+        <Attr Name="ImportTime" Val="1729049718"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/I2C_BaudRateGenerator_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/I2C_BaudRateGenerator_tb.v"/>
+        <Attr Name="ImportTime" Val="1729049997"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/I2C_DataUnit_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/I2C_DataUnit_tb.v"/>
+        <Attr Name="ImportTime" Val="1728867908"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/I2C_SDAmodule_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/I2C_SDAmodule_tb.v"/>
+        <Attr Name="ImportTime" Val="1729049997"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/I2C_ShiftRegister_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/I2C_ShiftRegister_tb.v"/>
+        <Attr Name="ImportTime" Val="1729049997"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab7phase2Fall2024source files/PositiveClockedOneShot_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Users/zamoraad/Downloads/lab7phase2Fall2024source files/PositiveClockedOneShot_tb.v"/>
+        <Attr Name="ImportTime" Val="1729049991"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Lab7I2Cphase2fall2024JJS"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constr_1.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/constr_1.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="Clock80MHz"/>
+</GenRun>

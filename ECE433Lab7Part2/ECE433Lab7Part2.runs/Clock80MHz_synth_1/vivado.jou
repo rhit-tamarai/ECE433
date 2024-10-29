@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Oct 29 16:10:16 2024
+# Process ID: 11744
+# Current directory: C:/Xilinx/ECE433/Lab7/ECE433/ECE433Lab7Part2/ECE433Lab7Part2.runs/Clock80MHz_synth_1
+# Command line: vivado.exe -log Clock80MHz.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Clock80MHz.tcl
+# Log file: C:/Xilinx/ECE433/Lab7/ECE433/ECE433Lab7Part2/ECE433Lab7Part2.runs/Clock80MHz_synth_1/Clock80MHz.vds
+# Journal file: C:/Xilinx/ECE433/Lab7/ECE433/ECE433Lab7Part2/ECE433Lab7Part2.runs/Clock80MHz_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Clock80MHz.tcl -notrace

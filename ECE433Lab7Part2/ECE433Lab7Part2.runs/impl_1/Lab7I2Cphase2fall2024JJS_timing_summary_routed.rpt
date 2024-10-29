@@ -1,0 +1,1663 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Oct 29 16:29:38 2024
+| Host         : RHIT-R912N07F running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file Lab7I2Cphase2fall2024JJS_timing_summary_routed.rpt -pb Lab7I2Cphase2fall2024JJS_timing_summary_routed.pb -rpx Lab7I2Cphase2fall2024JJS_timing_summary_routed.rpx -warn_on_violation
+| Design       : Lab7I2Cphase2fall2024JJS
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 7 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 27 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      4.631        0.000                      0                  210        0.117        0.000                      0                  210        3.000        0.000                       0                   166  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                      Waveform(ns)       Period(ns)      Frequency(MHz)
+-----                      ------------       ----------      --------------
+Clock                      {0.000 5.000}      10.000          100.000         
+  clk_out80MHz_Clock80MHz  {0.000 6.250}      12.500          80.000          
+  clkfbout_Clock80MHz      {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+Clock                                                                                                                                                                        3.000        0.000                       0                     1  
+  clk_out80MHz_Clock80MHz        4.631        0.000                      0                  210        0.117        0.000                      0                  210        5.750        0.000                       0                   162  
+  clkfbout_Clock80MHz                                                                                                                                                        7.845        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  Clock
+  To Clock:  Clock
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        3.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         Clock
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { Clock }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y2  SystemClockUnit/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y2  SystemClockUnit/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y2  SystemClockUnit/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y2  SystemClockUnit/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y2  SystemClockUnit/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            2.000         5.000       3.000      MMCME2_ADV_X1Y2  SystemClockUnit/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out80MHz_Clock80MHz
+  To Clock:  clk_out80MHz_Clock80MHz
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.631ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.117ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        5.750ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.631ns  (required time - arrival time)
+  Source:                 Temperature_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            SevenSegUnit/DisplayInput/Digit2_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (clk_out80MHz_Clock80MHz rise@12.500ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        7.801ns  (logic 2.526ns (32.381%)  route 5.275ns (67.619%))
+  Logic Levels:           9  (CARRY4=2 LUT2=1 LUT3=1 LUT6=5)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.513ns = ( 10.987 - 12.500 ) 
+    Source Clock Delay      (SCD):    -0.915ns
+    Clock Pessimism Removal (CPR):    0.576ns
+  Clock Uncertainty:      0.077ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.137ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.715    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.070    -4.355 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.719    -2.636    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.540 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.625    -0.915    clock80MHz
+    SLICE_X38Y78         FDRE                                         r  Temperature_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y78         FDRE (Prop_fdre_C_Q)         0.518    -0.397 r  Temperature_reg[2]/Q
+                         net (fo=16, routed)          0.786     0.389    ConvertUnit/Temperature[2]
+    SLICE_X39Y81         LUT2 (Prop_lut2_I0_O)        0.124     0.513 r  ConvertUnit/Digit2[7]_i_21/O
+                         net (fo=1, routed)           0.000     0.513    ConvertUnit/Digit2[7]_i_21_n_0
+    SLICE_X39Y81         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     0.914 r  ConvertUnit/Digit2_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     0.914    ConvertUnit/Digit2_reg[7]_i_9_n_0
+    SLICE_X39Y82         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     1.248 r  ConvertUnit/Digit2_reg[7]_i_20/O[1]
+                         net (fo=6, routed)           1.213     2.460    SevenSegUnit/DisplayInput/First12[5]
+    SLICE_X40Y82         LUT6 (Prop_lut6_I1_O)        0.303     2.763 r  SevenSegUnit/DisplayInput/Digit2[7]_i_25/O
+                         net (fo=3, routed)           0.443     3.206    SevenSegUnit/DisplayInput/Digit2[7]_i_25_n_0
+    SLICE_X38Y82         LUT6 (Prop_lut6_I0_O)        0.124     3.330 r  SevenSegUnit/DisplayInput/Digit2[7]_i_11/O
+                         net (fo=9, routed)           0.994     4.324    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[4]
+    SLICE_X38Y80         LUT3 (Prop_lut3_I2_O)        0.146     4.470 r  SevenSegUnit/DisplayInput/Digit2[7]_i_18/O
+                         net (fo=1, routed)           0.452     4.922    SevenSegUnit/DisplayInput/Digit2[7]_i_18_n_0
+    SLICE_X38Y80         LUT6 (Prop_lut6_I0_O)        0.328     5.250 r  SevenSegUnit/DisplayInput/Digit2[7]_i_6/O
+                         net (fo=10, routed)          0.691     5.942    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[1]
+    SLICE_X39Y80         LUT6 (Prop_lut6_I5_O)        0.124     6.066 r  SevenSegUnit/DisplayInput/Digit2[7]_i_7/O
+                         net (fo=15, routed)          0.696     6.762    SevenSegUnit/DisplayInput/Digit2[7]_i_7_n_0
+    SLICE_X39Y79         LUT6 (Prop_lut6_I3_O)        0.124     6.886 r  SevenSegUnit/DisplayInput/Digit2[1]_i_1/O
+                         net (fo=1, routed)           0.000     6.886    SevenSegUnit/DisplayInput/D2[1]
+    SLICE_X39Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit2_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                     12.500    12.500 r  
+    E3                                                0.000    12.500 r  Clock (IN)
+                         net (fo=0)                   0.000    12.500    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    13.911 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    15.073    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.324     7.749 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.639     9.388    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     9.479 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.507    10.987    SevenSegUnit/DisplayInput/CLK
+    SLICE_X39Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit2_reg[1]/C
+                         clock pessimism              0.576    11.563    
+                         clock uncertainty           -0.077    11.486    
+    SLICE_X39Y79         FDRE (Setup_fdre_C_D)        0.031    11.517    SevenSegUnit/DisplayInput/Digit2_reg[1]
+  -------------------------------------------------------------------
+                         required time                         11.517    
+                         arrival time                          -6.886    
+  -------------------------------------------------------------------
+                         slack                                  4.631    
+
+Slack (MET) :             4.634ns  (required time - arrival time)
+  Source:                 Temperature_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            SevenSegUnit/DisplayInput/Digit2_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (clk_out80MHz_Clock80MHz rise@12.500ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        7.796ns  (logic 2.526ns (32.401%)  route 5.270ns (67.599%))
+  Logic Levels:           9  (CARRY4=2 LUT2=1 LUT3=1 LUT6=5)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.513ns = ( 10.987 - 12.500 ) 
+    Source Clock Delay      (SCD):    -0.915ns
+    Clock Pessimism Removal (CPR):    0.576ns
+  Clock Uncertainty:      0.077ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.137ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.715    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.070    -4.355 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.719    -2.636    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.540 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.625    -0.915    clock80MHz
+    SLICE_X38Y78         FDRE                                         r  Temperature_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y78         FDRE (Prop_fdre_C_Q)         0.518    -0.397 r  Temperature_reg[2]/Q
+                         net (fo=16, routed)          0.786     0.389    ConvertUnit/Temperature[2]
+    SLICE_X39Y81         LUT2 (Prop_lut2_I0_O)        0.124     0.513 r  ConvertUnit/Digit2[7]_i_21/O
+                         net (fo=1, routed)           0.000     0.513    ConvertUnit/Digit2[7]_i_21_n_0
+    SLICE_X39Y81         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     0.914 r  ConvertUnit/Digit2_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     0.914    ConvertUnit/Digit2_reg[7]_i_9_n_0
+    SLICE_X39Y82         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     1.248 r  ConvertUnit/Digit2_reg[7]_i_20/O[1]
+                         net (fo=6, routed)           1.213     2.460    SevenSegUnit/DisplayInput/First12[5]
+    SLICE_X40Y82         LUT6 (Prop_lut6_I1_O)        0.303     2.763 r  SevenSegUnit/DisplayInput/Digit2[7]_i_25/O
+                         net (fo=3, routed)           0.443     3.206    SevenSegUnit/DisplayInput/Digit2[7]_i_25_n_0
+    SLICE_X38Y82         LUT6 (Prop_lut6_I0_O)        0.124     3.330 r  SevenSegUnit/DisplayInput/Digit2[7]_i_11/O
+                         net (fo=9, routed)           0.994     4.324    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[4]
+    SLICE_X38Y80         LUT3 (Prop_lut3_I2_O)        0.146     4.470 r  SevenSegUnit/DisplayInput/Digit2[7]_i_18/O
+                         net (fo=1, routed)           0.452     4.922    SevenSegUnit/DisplayInput/Digit2[7]_i_18_n_0
+    SLICE_X38Y80         LUT6 (Prop_lut6_I0_O)        0.328     5.250 r  SevenSegUnit/DisplayInput/Digit2[7]_i_6/O
+                         net (fo=10, routed)          0.691     5.942    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[1]
+    SLICE_X39Y80         LUT6 (Prop_lut6_I5_O)        0.124     6.066 r  SevenSegUnit/DisplayInput/Digit2[7]_i_7/O
+                         net (fo=15, routed)          0.691     6.757    SevenSegUnit/DisplayInput/Digit2[7]_i_7_n_0
+    SLICE_X39Y79         LUT6 (Prop_lut6_I1_O)        0.124     6.881 r  SevenSegUnit/DisplayInput/Digit2[0]_i_1/O
+                         net (fo=1, routed)           0.000     6.881    SevenSegUnit/DisplayInput/D2[0]
+    SLICE_X39Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit2_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                     12.500    12.500 r  
+    E3                                                0.000    12.500 r  Clock (IN)
+                         net (fo=0)                   0.000    12.500    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    13.911 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    15.073    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.324     7.749 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.639     9.388    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     9.479 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.507    10.987    SevenSegUnit/DisplayInput/CLK
+    SLICE_X39Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit2_reg[0]/C
+                         clock pessimism              0.576    11.563    
+                         clock uncertainty           -0.077    11.486    
+    SLICE_X39Y79         FDRE (Setup_fdre_C_D)        0.029    11.515    SevenSegUnit/DisplayInput/Digit2_reg[0]
+  -------------------------------------------------------------------
+                         required time                         11.515    
+                         arrival time                          -6.881    
+  -------------------------------------------------------------------
+                         slack                                  4.634    
+
+Slack (MET) :             4.676ns  (required time - arrival time)
+  Source:                 Temperature_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            SevenSegUnit/DisplayInput/Digit3_reg[5]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (clk_out80MHz_Clock80MHz rise@12.500ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        7.741ns  (logic 2.526ns (32.631%)  route 5.215ns (67.369%))
+  Logic Levels:           9  (CARRY4=2 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.038ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.512ns = ( 10.988 - 12.500 ) 
+    Source Clock Delay      (SCD):    -0.915ns
+    Clock Pessimism Removal (CPR):    0.559ns
+  Clock Uncertainty:      0.077ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.137ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.715    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.070    -4.355 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.719    -2.636    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.540 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.625    -0.915    clock80MHz
+    SLICE_X38Y78         FDRE                                         r  Temperature_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y78         FDRE (Prop_fdre_C_Q)         0.518    -0.397 r  Temperature_reg[2]/Q
+                         net (fo=16, routed)          0.786     0.389    ConvertUnit/Temperature[2]
+    SLICE_X39Y81         LUT2 (Prop_lut2_I0_O)        0.124     0.513 r  ConvertUnit/Digit2[7]_i_21/O
+                         net (fo=1, routed)           0.000     0.513    ConvertUnit/Digit2[7]_i_21_n_0
+    SLICE_X39Y81         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     0.914 r  ConvertUnit/Digit2_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     0.914    ConvertUnit/Digit2_reg[7]_i_9_n_0
+    SLICE_X39Y82         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     1.248 r  ConvertUnit/Digit2_reg[7]_i_20/O[1]
+                         net (fo=6, routed)           1.213     2.460    SevenSegUnit/DisplayInput/First12[5]
+    SLICE_X40Y82         LUT6 (Prop_lut6_I1_O)        0.303     2.763 r  SevenSegUnit/DisplayInput/Digit2[7]_i_25/O
+                         net (fo=3, routed)           0.443     3.206    SevenSegUnit/DisplayInput/Digit2[7]_i_25_n_0
+    SLICE_X38Y82         LUT6 (Prop_lut6_I0_O)        0.124     3.330 r  SevenSegUnit/DisplayInput/Digit2[7]_i_11/O
+                         net (fo=9, routed)           0.994     4.324    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[4]
+    SLICE_X38Y80         LUT3 (Prop_lut3_I2_O)        0.146     4.470 r  SevenSegUnit/DisplayInput/Digit2[7]_i_18/O
+                         net (fo=1, routed)           0.452     4.922    SevenSegUnit/DisplayInput/Digit2[7]_i_18_n_0
+    SLICE_X38Y80         LUT6 (Prop_lut6_I0_O)        0.328     5.250 r  SevenSegUnit/DisplayInput/Digit2[7]_i_6/O
+                         net (fo=10, routed)          0.691     5.942    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[1]
+    SLICE_X39Y80         LUT6 (Prop_lut6_I5_O)        0.124     6.066 r  SevenSegUnit/DisplayInput/Digit2[7]_i_7/O
+                         net (fo=15, routed)          0.637     6.702    SevenSegUnit/DisplayInput/Digit2[7]_i_7_n_0
+    SLICE_X37Y80         LUT4 (Prop_lut4_I0_O)        0.124     6.826 r  SevenSegUnit/DisplayInput/Digit3[5]_i_1/O
+                         net (fo=1, routed)           0.000     6.826    SevenSegUnit/DisplayInput/D3[5]
+    SLICE_X37Y80         FDRE                                         r  SevenSegUnit/DisplayInput/Digit3_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                     12.500    12.500 r  
+    E3                                                0.000    12.500 r  Clock (IN)
+                         net (fo=0)                   0.000    12.500    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    13.911 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    15.073    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.324     7.749 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.639     9.388    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     9.479 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.508    10.988    SevenSegUnit/DisplayInput/CLK
+    SLICE_X37Y80         FDRE                                         r  SevenSegUnit/DisplayInput/Digit3_reg[5]/C
+                         clock pessimism              0.559    11.547    
+                         clock uncertainty           -0.077    11.470    
+    SLICE_X37Y80         FDRE (Setup_fdre_C_D)        0.032    11.502    SevenSegUnit/DisplayInput/Digit3_reg[5]
+  -------------------------------------------------------------------
+                         required time                         11.502    
+                         arrival time                          -6.826    
+  -------------------------------------------------------------------
+                         slack                                  4.676    
+
+Slack (MET) :             4.803ns  (required time - arrival time)
+  Source:                 Temperature_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            SevenSegUnit/DisplayInput/Digit3_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (clk_out80MHz_Clock80MHz rise@12.500ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        7.614ns  (logic 2.526ns (33.176%)  route 5.088ns (66.824%))
+  Logic Levels:           9  (CARRY4=2 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.038ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.512ns = ( 10.988 - 12.500 ) 
+    Source Clock Delay      (SCD):    -0.915ns
+    Clock Pessimism Removal (CPR):    0.559ns
+  Clock Uncertainty:      0.077ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.137ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.715    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.070    -4.355 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.719    -2.636    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.540 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.625    -0.915    clock80MHz
+    SLICE_X38Y78         FDRE                                         r  Temperature_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y78         FDRE (Prop_fdre_C_Q)         0.518    -0.397 r  Temperature_reg[2]/Q
+                         net (fo=16, routed)          0.786     0.389    ConvertUnit/Temperature[2]
+    SLICE_X39Y81         LUT2 (Prop_lut2_I0_O)        0.124     0.513 r  ConvertUnit/Digit2[7]_i_21/O
+                         net (fo=1, routed)           0.000     0.513    ConvertUnit/Digit2[7]_i_21_n_0
+    SLICE_X39Y81         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     0.914 r  ConvertUnit/Digit2_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     0.914    ConvertUnit/Digit2_reg[7]_i_9_n_0
+    SLICE_X39Y82         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     1.248 r  ConvertUnit/Digit2_reg[7]_i_20/O[1]
+                         net (fo=6, routed)           1.213     2.460    SevenSegUnit/DisplayInput/First12[5]
+    SLICE_X40Y82         LUT6 (Prop_lut6_I1_O)        0.303     2.763 r  SevenSegUnit/DisplayInput/Digit2[7]_i_25/O
+                         net (fo=3, routed)           0.443     3.206    SevenSegUnit/DisplayInput/Digit2[7]_i_25_n_0
+    SLICE_X38Y82         LUT6 (Prop_lut6_I0_O)        0.124     3.330 r  SevenSegUnit/DisplayInput/Digit2[7]_i_11/O
+                         net (fo=9, routed)           0.994     4.324    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[4]
+    SLICE_X38Y80         LUT3 (Prop_lut3_I2_O)        0.146     4.470 r  SevenSegUnit/DisplayInput/Digit2[7]_i_18/O
+                         net (fo=1, routed)           0.452     4.922    SevenSegUnit/DisplayInput/Digit2[7]_i_18_n_0
+    SLICE_X38Y80         LUT6 (Prop_lut6_I0_O)        0.328     5.250 r  SevenSegUnit/DisplayInput/Digit2[7]_i_6/O
+                         net (fo=10, routed)          0.691     5.942    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[1]
+    SLICE_X39Y80         LUT6 (Prop_lut6_I5_O)        0.124     6.066 r  SevenSegUnit/DisplayInput/Digit2[7]_i_7/O
+                         net (fo=15, routed)          0.509     6.575    SevenSegUnit/DisplayInput/Digit2[7]_i_7_n_0
+    SLICE_X36Y79         LUT4 (Prop_lut4_I0_O)        0.124     6.699 r  SevenSegUnit/DisplayInput/Digit3[0]_i_1/O
+                         net (fo=1, routed)           0.000     6.699    SevenSegUnit/DisplayInput/D3[0]
+    SLICE_X36Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit3_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                     12.500    12.500 r  
+    E3                                                0.000    12.500 r  Clock (IN)
+                         net (fo=0)                   0.000    12.500    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    13.911 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    15.073    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.324     7.749 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.639     9.388    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     9.479 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.508    10.988    SevenSegUnit/DisplayInput/CLK
+    SLICE_X36Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit3_reg[0]/C
+                         clock pessimism              0.559    11.547    
+                         clock uncertainty           -0.077    11.470    
+    SLICE_X36Y79         FDRE (Setup_fdre_C_D)        0.032    11.502    SevenSegUnit/DisplayInput/Digit3_reg[0]
+  -------------------------------------------------------------------
+                         required time                         11.502    
+                         arrival time                          -6.699    
+  -------------------------------------------------------------------
+                         slack                                  4.803    
+
+Slack (MET) :             4.814ns  (required time - arrival time)
+  Source:                 Temperature_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            SevenSegUnit/DisplayInput/Digit3_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (clk_out80MHz_Clock80MHz rise@12.500ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        7.602ns  (logic 2.526ns (33.228%)  route 5.076ns (66.772%))
+  Logic Levels:           9  (CARRY4=2 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.038ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.512ns = ( 10.988 - 12.500 ) 
+    Source Clock Delay      (SCD):    -0.915ns
+    Clock Pessimism Removal (CPR):    0.559ns
+  Clock Uncertainty:      0.077ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.137ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.715    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.070    -4.355 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.719    -2.636    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.540 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.625    -0.915    clock80MHz
+    SLICE_X38Y78         FDRE                                         r  Temperature_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y78         FDRE (Prop_fdre_C_Q)         0.518    -0.397 r  Temperature_reg[2]/Q
+                         net (fo=16, routed)          0.786     0.389    ConvertUnit/Temperature[2]
+    SLICE_X39Y81         LUT2 (Prop_lut2_I0_O)        0.124     0.513 r  ConvertUnit/Digit2[7]_i_21/O
+                         net (fo=1, routed)           0.000     0.513    ConvertUnit/Digit2[7]_i_21_n_0
+    SLICE_X39Y81         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     0.914 r  ConvertUnit/Digit2_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     0.914    ConvertUnit/Digit2_reg[7]_i_9_n_0
+    SLICE_X39Y82         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     1.248 r  ConvertUnit/Digit2_reg[7]_i_20/O[1]
+                         net (fo=6, routed)           1.213     2.460    SevenSegUnit/DisplayInput/First12[5]
+    SLICE_X40Y82         LUT6 (Prop_lut6_I1_O)        0.303     2.763 r  SevenSegUnit/DisplayInput/Digit2[7]_i_25/O
+                         net (fo=3, routed)           0.443     3.206    SevenSegUnit/DisplayInput/Digit2[7]_i_25_n_0
+    SLICE_X38Y82         LUT6 (Prop_lut6_I0_O)        0.124     3.330 r  SevenSegUnit/DisplayInput/Digit2[7]_i_11/O
+                         net (fo=9, routed)           0.994     4.324    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[4]
+    SLICE_X38Y80         LUT3 (Prop_lut3_I2_O)        0.146     4.470 r  SevenSegUnit/DisplayInput/Digit2[7]_i_18/O
+                         net (fo=1, routed)           0.452     4.922    SevenSegUnit/DisplayInput/Digit2[7]_i_18_n_0
+    SLICE_X38Y80         LUT6 (Prop_lut6_I0_O)        0.328     5.250 f  SevenSegUnit/DisplayInput/Digit2[7]_i_6/O
+                         net (fo=10, routed)          0.691     5.942    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[1]
+    SLICE_X39Y80         LUT6 (Prop_lut6_I5_O)        0.124     6.066 f  SevenSegUnit/DisplayInput/Digit2[7]_i_7/O
+                         net (fo=15, routed)          0.498     6.563    SevenSegUnit/DisplayInput/Digit2[7]_i_7_n_0
+    SLICE_X37Y79         LUT4 (Prop_lut4_I3_O)        0.124     6.687 r  SevenSegUnit/DisplayInput/Digit3[2]_i_1/O
+                         net (fo=1, routed)           0.000     6.687    SevenSegUnit/DisplayInput/D3[2]
+    SLICE_X37Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit3_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                     12.500    12.500 r  
+    E3                                                0.000    12.500 r  Clock (IN)
+                         net (fo=0)                   0.000    12.500    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    13.911 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    15.073    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.324     7.749 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.639     9.388    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     9.479 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.508    10.988    SevenSegUnit/DisplayInput/CLK
+    SLICE_X37Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit3_reg[2]/C
+                         clock pessimism              0.559    11.547    
+                         clock uncertainty           -0.077    11.470    
+    SLICE_X37Y79         FDRE (Setup_fdre_C_D)        0.031    11.501    SevenSegUnit/DisplayInput/Digit3_reg[2]
+  -------------------------------------------------------------------
+                         required time                         11.501    
+                         arrival time                          -6.687    
+  -------------------------------------------------------------------
+                         slack                                  4.814    
+
+Slack (MET) :             4.838ns  (required time - arrival time)
+  Source:                 Temperature_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            SevenSegUnit/DisplayInput/Digit3_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (clk_out80MHz_Clock80MHz rise@12.500ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        7.579ns  (logic 2.526ns (33.329%)  route 5.053ns (66.671%))
+  Logic Levels:           9  (CARRY4=2 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.038ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.512ns = ( 10.988 - 12.500 ) 
+    Source Clock Delay      (SCD):    -0.915ns
+    Clock Pessimism Removal (CPR):    0.559ns
+  Clock Uncertainty:      0.077ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.137ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.715    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.070    -4.355 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.719    -2.636    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.540 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.625    -0.915    clock80MHz
+    SLICE_X38Y78         FDRE                                         r  Temperature_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y78         FDRE (Prop_fdre_C_Q)         0.518    -0.397 r  Temperature_reg[2]/Q
+                         net (fo=16, routed)          0.786     0.389    ConvertUnit/Temperature[2]
+    SLICE_X39Y81         LUT2 (Prop_lut2_I0_O)        0.124     0.513 r  ConvertUnit/Digit2[7]_i_21/O
+                         net (fo=1, routed)           0.000     0.513    ConvertUnit/Digit2[7]_i_21_n_0
+    SLICE_X39Y81         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     0.914 r  ConvertUnit/Digit2_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     0.914    ConvertUnit/Digit2_reg[7]_i_9_n_0
+    SLICE_X39Y82         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     1.248 r  ConvertUnit/Digit2_reg[7]_i_20/O[1]
+                         net (fo=6, routed)           1.213     2.460    SevenSegUnit/DisplayInput/First12[5]
+    SLICE_X40Y82         LUT6 (Prop_lut6_I1_O)        0.303     2.763 r  SevenSegUnit/DisplayInput/Digit2[7]_i_25/O
+                         net (fo=3, routed)           0.443     3.206    SevenSegUnit/DisplayInput/Digit2[7]_i_25_n_0
+    SLICE_X38Y82         LUT6 (Prop_lut6_I0_O)        0.124     3.330 r  SevenSegUnit/DisplayInput/Digit2[7]_i_11/O
+                         net (fo=9, routed)           0.994     4.324    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[4]
+    SLICE_X38Y80         LUT3 (Prop_lut3_I2_O)        0.146     4.470 r  SevenSegUnit/DisplayInput/Digit2[7]_i_18/O
+                         net (fo=1, routed)           0.452     4.922    SevenSegUnit/DisplayInput/Digit2[7]_i_18_n_0
+    SLICE_X38Y80         LUT6 (Prop_lut6_I0_O)        0.328     5.250 r  SevenSegUnit/DisplayInput/Digit2[7]_i_6/O
+                         net (fo=10, routed)          0.691     5.942    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[1]
+    SLICE_X39Y80         LUT6 (Prop_lut6_I5_O)        0.124     6.066 r  SevenSegUnit/DisplayInput/Digit2[7]_i_7/O
+                         net (fo=15, routed)          0.474     6.540    SevenSegUnit/DisplayInput/Digit2[7]_i_7_n_0
+    SLICE_X36Y80         LUT4 (Prop_lut4_I2_O)        0.124     6.664 r  SevenSegUnit/DisplayInput/Digit3[1]_i_1/O
+                         net (fo=1, routed)           0.000     6.664    SevenSegUnit/DisplayInput/D3[1]
+    SLICE_X36Y80         FDRE                                         r  SevenSegUnit/DisplayInput/Digit3_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                     12.500    12.500 r  
+    E3                                                0.000    12.500 r  Clock (IN)
+                         net (fo=0)                   0.000    12.500    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    13.911 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    15.073    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.324     7.749 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.639     9.388    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     9.479 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.508    10.988    SevenSegUnit/DisplayInput/CLK
+    SLICE_X36Y80         FDRE                                         r  SevenSegUnit/DisplayInput/Digit3_reg[1]/C
+                         clock pessimism              0.559    11.547    
+                         clock uncertainty           -0.077    11.470    
+    SLICE_X36Y80         FDRE (Setup_fdre_C_D)        0.032    11.502    SevenSegUnit/DisplayInput/Digit3_reg[1]
+  -------------------------------------------------------------------
+                         required time                         11.502    
+                         arrival time                          -6.664    
+  -------------------------------------------------------------------
+                         slack                                  4.838    
+
+Slack (MET) :             4.848ns  (required time - arrival time)
+  Source:                 Temperature_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            SevenSegUnit/DisplayInput/Digit2_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (clk_out80MHz_Clock80MHz rise@12.500ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        7.584ns  (logic 2.526ns (33.308%)  route 5.058ns (66.692%))
+  Logic Levels:           9  (CARRY4=2 LUT2=1 LUT3=1 LUT6=5)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.513ns = ( 10.987 - 12.500 ) 
+    Source Clock Delay      (SCD):    -0.915ns
+    Clock Pessimism Removal (CPR):    0.576ns
+  Clock Uncertainty:      0.077ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.137ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.715    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.070    -4.355 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.719    -2.636    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.540 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.625    -0.915    clock80MHz
+    SLICE_X38Y78         FDRE                                         r  Temperature_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y78         FDRE (Prop_fdre_C_Q)         0.518    -0.397 r  Temperature_reg[2]/Q
+                         net (fo=16, routed)          0.786     0.389    ConvertUnit/Temperature[2]
+    SLICE_X39Y81         LUT2 (Prop_lut2_I0_O)        0.124     0.513 r  ConvertUnit/Digit2[7]_i_21/O
+                         net (fo=1, routed)           0.000     0.513    ConvertUnit/Digit2[7]_i_21_n_0
+    SLICE_X39Y81         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     0.914 r  ConvertUnit/Digit2_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     0.914    ConvertUnit/Digit2_reg[7]_i_9_n_0
+    SLICE_X39Y82         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     1.248 r  ConvertUnit/Digit2_reg[7]_i_20/O[1]
+                         net (fo=6, routed)           1.213     2.460    SevenSegUnit/DisplayInput/First12[5]
+    SLICE_X40Y82         LUT6 (Prop_lut6_I1_O)        0.303     2.763 r  SevenSegUnit/DisplayInput/Digit2[7]_i_25/O
+                         net (fo=3, routed)           0.443     3.206    SevenSegUnit/DisplayInput/Digit2[7]_i_25_n_0
+    SLICE_X38Y82         LUT6 (Prop_lut6_I0_O)        0.124     3.330 r  SevenSegUnit/DisplayInput/Digit2[7]_i_11/O
+                         net (fo=9, routed)           0.994     4.324    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[4]
+    SLICE_X38Y80         LUT3 (Prop_lut3_I2_O)        0.146     4.470 r  SevenSegUnit/DisplayInput/Digit2[7]_i_18/O
+                         net (fo=1, routed)           0.452     4.922    SevenSegUnit/DisplayInput/Digit2[7]_i_18_n_0
+    SLICE_X38Y80         LUT6 (Prop_lut6_I0_O)        0.328     5.250 r  SevenSegUnit/DisplayInput/Digit2[7]_i_6/O
+                         net (fo=10, routed)          0.691     5.942    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[1]
+    SLICE_X39Y80         LUT6 (Prop_lut6_I5_O)        0.124     6.066 r  SevenSegUnit/DisplayInput/Digit2[7]_i_7/O
+                         net (fo=15, routed)          0.479     6.545    SevenSegUnit/DisplayInput/Digit2[7]_i_7_n_0
+    SLICE_X39Y79         LUT6 (Prop_lut6_I4_O)        0.124     6.669 r  SevenSegUnit/DisplayInput/Digit2[3]_i_1/O
+                         net (fo=1, routed)           0.000     6.669    SevenSegUnit/DisplayInput/D2[3]
+    SLICE_X39Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit2_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                     12.500    12.500 r  
+    E3                                                0.000    12.500 r  Clock (IN)
+                         net (fo=0)                   0.000    12.500    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    13.911 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    15.073    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.324     7.749 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.639     9.388    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     9.479 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.507    10.987    SevenSegUnit/DisplayInput/CLK
+    SLICE_X39Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit2_reg[3]/C
+                         clock pessimism              0.576    11.563    
+                         clock uncertainty           -0.077    11.486    
+    SLICE_X39Y79         FDRE (Setup_fdre_C_D)        0.031    11.517    SevenSegUnit/DisplayInput/Digit2_reg[3]
+  -------------------------------------------------------------------
+                         required time                         11.517    
+                         arrival time                          -6.669    
+  -------------------------------------------------------------------
+                         slack                                  4.848    
+
+Slack (MET) :             4.850ns  (required time - arrival time)
+  Source:                 Temperature_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            SevenSegUnit/DisplayInput/Digit2_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (clk_out80MHz_Clock80MHz rise@12.500ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        7.583ns  (logic 2.526ns (33.313%)  route 5.057ns (66.687%))
+  Logic Levels:           9  (CARRY4=2 LUT2=1 LUT3=1 LUT6=5)
+  Clock Path Skew:        -0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.513ns = ( 10.987 - 12.500 ) 
+    Source Clock Delay      (SCD):    -0.915ns
+    Clock Pessimism Removal (CPR):    0.576ns
+  Clock Uncertainty:      0.077ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.137ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.715    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.070    -4.355 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.719    -2.636    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.540 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.625    -0.915    clock80MHz
+    SLICE_X38Y78         FDRE                                         r  Temperature_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y78         FDRE (Prop_fdre_C_Q)         0.518    -0.397 r  Temperature_reg[2]/Q
+                         net (fo=16, routed)          0.786     0.389    ConvertUnit/Temperature[2]
+    SLICE_X39Y81         LUT2 (Prop_lut2_I0_O)        0.124     0.513 r  ConvertUnit/Digit2[7]_i_21/O
+                         net (fo=1, routed)           0.000     0.513    ConvertUnit/Digit2[7]_i_21_n_0
+    SLICE_X39Y81         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     0.914 r  ConvertUnit/Digit2_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     0.914    ConvertUnit/Digit2_reg[7]_i_9_n_0
+    SLICE_X39Y82         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     1.248 r  ConvertUnit/Digit2_reg[7]_i_20/O[1]
+                         net (fo=6, routed)           1.213     2.460    SevenSegUnit/DisplayInput/First12[5]
+    SLICE_X40Y82         LUT6 (Prop_lut6_I1_O)        0.303     2.763 r  SevenSegUnit/DisplayInput/Digit2[7]_i_25/O
+                         net (fo=3, routed)           0.443     3.206    SevenSegUnit/DisplayInput/Digit2[7]_i_25_n_0
+    SLICE_X38Y82         LUT6 (Prop_lut6_I0_O)        0.124     3.330 r  SevenSegUnit/DisplayInput/Digit2[7]_i_11/O
+                         net (fo=9, routed)           0.994     4.324    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[4]
+    SLICE_X38Y80         LUT3 (Prop_lut3_I2_O)        0.146     4.470 r  SevenSegUnit/DisplayInput/Digit2[7]_i_18/O
+                         net (fo=1, routed)           0.452     4.922    SevenSegUnit/DisplayInput/Digit2[7]_i_18_n_0
+    SLICE_X38Y80         LUT6 (Prop_lut6_I0_O)        0.328     5.250 r  SevenSegUnit/DisplayInput/Digit2[7]_i_6/O
+                         net (fo=10, routed)          0.691     5.942    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[1]
+    SLICE_X39Y80         LUT6 (Prop_lut6_I5_O)        0.124     6.066 r  SevenSegUnit/DisplayInput/Digit2[7]_i_7/O
+                         net (fo=15, routed)          0.478     6.544    SevenSegUnit/DisplayInput/Digit2[7]_i_7_n_0
+    SLICE_X39Y79         LUT6 (Prop_lut6_I5_O)        0.124     6.668 r  SevenSegUnit/DisplayInput/Digit2[6]_i_1/O
+                         net (fo=1, routed)           0.000     6.668    SevenSegUnit/DisplayInput/D2[6]
+    SLICE_X39Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit2_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                     12.500    12.500 r  
+    E3                                                0.000    12.500 r  Clock (IN)
+                         net (fo=0)                   0.000    12.500    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    13.911 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    15.073    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.324     7.749 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.639     9.388    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     9.479 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.507    10.987    SevenSegUnit/DisplayInput/CLK
+    SLICE_X39Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit2_reg[6]/C
+                         clock pessimism              0.576    11.563    
+                         clock uncertainty           -0.077    11.486    
+    SLICE_X39Y79         FDRE (Setup_fdre_C_D)        0.032    11.518    SevenSegUnit/DisplayInput/Digit2_reg[6]
+  -------------------------------------------------------------------
+                         required time                         11.518    
+                         arrival time                          -6.668    
+  -------------------------------------------------------------------
+                         slack                                  4.850    
+
+Slack (MET) :             4.853ns  (required time - arrival time)
+  Source:                 Temperature_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            SevenSegUnit/DisplayInput/Digit3_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (clk_out80MHz_Clock80MHz rise@12.500ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        7.607ns  (logic 2.519ns (33.114%)  route 5.088ns (66.886%))
+  Logic Levels:           9  (CARRY4=2 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.038ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.512ns = ( 10.988 - 12.500 ) 
+    Source Clock Delay      (SCD):    -0.915ns
+    Clock Pessimism Removal (CPR):    0.559ns
+  Clock Uncertainty:      0.077ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.137ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.715    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.070    -4.355 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.719    -2.636    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.540 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.625    -0.915    clock80MHz
+    SLICE_X38Y78         FDRE                                         r  Temperature_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y78         FDRE (Prop_fdre_C_Q)         0.518    -0.397 r  Temperature_reg[2]/Q
+                         net (fo=16, routed)          0.786     0.389    ConvertUnit/Temperature[2]
+    SLICE_X39Y81         LUT2 (Prop_lut2_I0_O)        0.124     0.513 r  ConvertUnit/Digit2[7]_i_21/O
+                         net (fo=1, routed)           0.000     0.513    ConvertUnit/Digit2[7]_i_21_n_0
+    SLICE_X39Y81         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     0.914 r  ConvertUnit/Digit2_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     0.914    ConvertUnit/Digit2_reg[7]_i_9_n_0
+    SLICE_X39Y82         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     1.248 r  ConvertUnit/Digit2_reg[7]_i_20/O[1]
+                         net (fo=6, routed)           1.213     2.460    SevenSegUnit/DisplayInput/First12[5]
+    SLICE_X40Y82         LUT6 (Prop_lut6_I1_O)        0.303     2.763 r  SevenSegUnit/DisplayInput/Digit2[7]_i_25/O
+                         net (fo=3, routed)           0.443     3.206    SevenSegUnit/DisplayInput/Digit2[7]_i_25_n_0
+    SLICE_X38Y82         LUT6 (Prop_lut6_I0_O)        0.124     3.330 r  SevenSegUnit/DisplayInput/Digit2[7]_i_11/O
+                         net (fo=9, routed)           0.994     4.324    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[4]
+    SLICE_X38Y80         LUT3 (Prop_lut3_I2_O)        0.146     4.470 r  SevenSegUnit/DisplayInput/Digit2[7]_i_18/O
+                         net (fo=1, routed)           0.452     4.922    SevenSegUnit/DisplayInput/Digit2[7]_i_18_n_0
+    SLICE_X38Y80         LUT6 (Prop_lut6_I0_O)        0.328     5.250 r  SevenSegUnit/DisplayInput/Digit2[7]_i_6/O
+                         net (fo=10, routed)          0.691     5.942    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[1]
+    SLICE_X39Y80         LUT6 (Prop_lut6_I5_O)        0.124     6.066 r  SevenSegUnit/DisplayInput/Digit2[7]_i_7/O
+                         net (fo=15, routed)          0.509     6.575    SevenSegUnit/DisplayInput/Digit2[7]_i_7_n_0
+    SLICE_X36Y79         LUT4 (Prop_lut4_I1_O)        0.117     6.692 r  SevenSegUnit/DisplayInput/Digit3[4]_i_1/O
+                         net (fo=1, routed)           0.000     6.692    SevenSegUnit/DisplayInput/D3[4]
+    SLICE_X36Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit3_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                     12.500    12.500 r  
+    E3                                                0.000    12.500 r  Clock (IN)
+                         net (fo=0)                   0.000    12.500    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    13.911 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    15.073    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.324     7.749 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.639     9.388    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     9.479 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.508    10.988    SevenSegUnit/DisplayInput/CLK
+    SLICE_X36Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit3_reg[4]/C
+                         clock pessimism              0.559    11.547    
+                         clock uncertainty           -0.077    11.470    
+    SLICE_X36Y79         FDRE (Setup_fdre_C_D)        0.075    11.545    SevenSegUnit/DisplayInput/Digit3_reg[4]
+  -------------------------------------------------------------------
+                         required time                         11.545    
+                         arrival time                          -6.692    
+  -------------------------------------------------------------------
+                         slack                                  4.853    
+
+Slack (MET) :             4.862ns  (required time - arrival time)
+  Source:                 Temperature_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            SevenSegUnit/DisplayInput/Digit3_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            12.500ns  (clk_out80MHz_Clock80MHz rise@12.500ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        7.598ns  (logic 2.522ns (33.193%)  route 5.076ns (66.807%))
+  Logic Levels:           9  (CARRY4=2 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.038ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.512ns = ( 10.988 - 12.500 ) 
+    Source Clock Delay      (SCD):    -0.915ns
+    Clock Pessimism Removal (CPR):    0.559ns
+  Clock Uncertainty:      0.077ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.137ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.233     2.715    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.070    -4.355 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.719    -2.636    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096    -2.540 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.625    -0.915    clock80MHz
+    SLICE_X38Y78         FDRE                                         r  Temperature_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y78         FDRE (Prop_fdre_C_Q)         0.518    -0.397 r  Temperature_reg[2]/Q
+                         net (fo=16, routed)          0.786     0.389    ConvertUnit/Temperature[2]
+    SLICE_X39Y81         LUT2 (Prop_lut2_I0_O)        0.124     0.513 r  ConvertUnit/Digit2[7]_i_21/O
+                         net (fo=1, routed)           0.000     0.513    ConvertUnit/Digit2[7]_i_21_n_0
+    SLICE_X39Y81         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     0.914 r  ConvertUnit/Digit2_reg[7]_i_9/CO[3]
+                         net (fo=1, routed)           0.000     0.914    ConvertUnit/Digit2_reg[7]_i_9_n_0
+    SLICE_X39Y82         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     1.248 r  ConvertUnit/Digit2_reg[7]_i_20/O[1]
+                         net (fo=6, routed)           1.213     2.460    SevenSegUnit/DisplayInput/First12[5]
+    SLICE_X40Y82         LUT6 (Prop_lut6_I1_O)        0.303     2.763 r  SevenSegUnit/DisplayInput/Digit2[7]_i_25/O
+                         net (fo=3, routed)           0.443     3.206    SevenSegUnit/DisplayInput/Digit2[7]_i_25_n_0
+    SLICE_X38Y82         LUT6 (Prop_lut6_I0_O)        0.124     3.330 r  SevenSegUnit/DisplayInput/Digit2[7]_i_11/O
+                         net (fo=9, routed)           0.994     4.324    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[4]
+    SLICE_X38Y80         LUT3 (Prop_lut3_I2_O)        0.146     4.470 r  SevenSegUnit/DisplayInput/Digit2[7]_i_18/O
+                         net (fo=1, routed)           0.452     4.922    SevenSegUnit/DisplayInput/Digit2[7]_i_18_n_0
+    SLICE_X38Y80         LUT6 (Prop_lut6_I0_O)        0.328     5.250 r  SevenSegUnit/DisplayInput/Digit2[7]_i_6/O
+                         net (fo=10, routed)          0.691     5.942    SevenSegUnit/DisplayInput/ConvertUnit/First11__305[1]
+    SLICE_X39Y80         LUT6 (Prop_lut6_I5_O)        0.124     6.066 r  SevenSegUnit/DisplayInput/Digit2[7]_i_7/O
+                         net (fo=15, routed)          0.498     6.563    SevenSegUnit/DisplayInput/Digit2[7]_i_7_n_0
+    SLICE_X37Y79         LUT4 (Prop_lut4_I3_O)        0.120     6.683 r  SevenSegUnit/DisplayInput/Digit3[3]_i_1/O
+                         net (fo=1, routed)           0.000     6.683    SevenSegUnit/DisplayInput/D3[3]
+    SLICE_X37Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit3_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                     12.500    12.500 r  
+    E3                                                0.000    12.500 r  Clock (IN)
+                         net (fo=0)                   0.000    12.500    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    13.911 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    15.073    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.324     7.749 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.639     9.388    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     9.479 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         1.508    10.988    SevenSegUnit/DisplayInput/CLK
+    SLICE_X37Y79         FDRE                                         r  SevenSegUnit/DisplayInput/Digit3_reg[3]/C
+                         clock pessimism              0.559    11.547    
+                         clock uncertainty           -0.077    11.470    
+    SLICE_X37Y79         FDRE (Setup_fdre_C_D)        0.075    11.545    SevenSegUnit/DisplayInput/Digit3_reg[3]
+  -------------------------------------------------------------------
+                         required time                         11.545    
+                         arrival time                          -6.683    
+  -------------------------------------------------------------------
+                         slack                                  4.862    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.117ns  (arrival time - required time)
+  Source:                 ReadUnit/DataUnit/ShiftUnit/ShiftRegister_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            Temperature_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out80MHz_Clock80MHz rise@0.000ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        0.206ns  (logic 0.141ns (68.378%)  route 0.065ns (31.622%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.845ns
+    Source Clock Delay      (SCD):    -0.606ns
+    Clock Pessimism Removal (CPR):    -0.252ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.690    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.379    -1.689 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.499    -1.190    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.164 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.558    -0.606    ReadUnit/DataUnit/ShiftUnit/clk_out80MHz
+    SLICE_X39Y78         FDRE                                         r  ReadUnit/DataUnit/ShiftUnit/ShiftRegister_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y78         FDRE (Prop_fdre_C_Q)         0.141    -0.465 r  ReadUnit/DataUnit/ShiftUnit/ShiftRegister_reg[2]/Q
+                         net (fo=2, routed)           0.065    -0.400    ReceivedData_OBUF[2]
+    SLICE_X38Y78         FDRE                                         r  Temperature_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.918    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.163    -2.245 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.544    -1.702    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.673 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.828    -0.845    clock80MHz
+    SLICE_X38Y78         FDRE                                         r  Temperature_reg[2]/C
+                         clock pessimism              0.252    -0.593    
+    SLICE_X38Y78         FDRE (Hold_fdre_C_D)         0.076    -0.517    Temperature_reg[2]
+  -------------------------------------------------------------------
+                         required time                          0.517    
+                         arrival time                          -0.400    
+  -------------------------------------------------------------------
+                         slack                                  0.117    
+
+Slack (MET) :             0.187ns  (arrival time - required time)
+  Source:                 ReadUnit/ControlUnit/FSM_onehot_State_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            ReadUnit/ControlUnit/FSM_onehot_State_reg[0]/D
+                            (rising edge-triggered cell FDSE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out80MHz_Clock80MHz rise@0.000ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        0.320ns  (logic 0.186ns (58.201%)  route 0.134ns (41.799%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.845ns
+    Source Clock Delay      (SCD):    -0.604ns
+    Clock Pessimism Removal (CPR):    -0.254ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.690    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.379    -1.689 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.499    -1.190    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.164 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.560    -0.604    ReadUnit/ControlUnit/clk_out80MHz
+    SLICE_X43Y80         FDRE                                         r  ReadUnit/ControlUnit/FSM_onehot_State_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y80         FDRE (Prop_fdre_C_Q)         0.141    -0.463 r  ReadUnit/ControlUnit/FSM_onehot_State_reg[10]/Q
+                         net (fo=32, routed)          0.134    -0.330    ReadUnit/ControlUnit/DelayUnit/Q[5]
+    SLICE_X42Y80         LUT6 (Prop_lut6_I5_O)        0.045    -0.285 r  ReadUnit/ControlUnit/DelayUnit/FSM_onehot_State[0]_i_1/O
+                         net (fo=1, routed)           0.000    -0.285    ReadUnit/ControlUnit/DelayUnit_n_3
+    SLICE_X42Y80         FDSE                                         r  ReadUnit/ControlUnit/FSM_onehot_State_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.918    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.163    -2.245 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.544    -1.702    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.673 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.828    -0.845    ReadUnit/ControlUnit/clk_out80MHz
+    SLICE_X42Y80         FDSE                                         r  ReadUnit/ControlUnit/FSM_onehot_State_reg[0]/C
+                         clock pessimism              0.254    -0.591    
+    SLICE_X42Y80         FDSE (Hold_fdse_C_D)         0.120    -0.471    ReadUnit/ControlUnit/FSM_onehot_State_reg[0]
+  -------------------------------------------------------------------
+                         required time                          0.471    
+                         arrival time                          -0.285    
+  -------------------------------------------------------------------
+                         slack                                  0.187    
+
+Slack (MET) :             0.187ns  (arrival time - required time)
+  Source:                 ReadUnit/DataUnit/ShiftUnit/ShiftRegister_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            Temperature_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out80MHz_Clock80MHz rise@0.000ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        0.271ns  (logic 0.141ns (51.938%)  route 0.130ns (48.062%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.845ns
+    Source Clock Delay      (SCD):    -0.606ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.690    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.379    -1.689 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.499    -1.190    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.164 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.558    -0.606    ReadUnit/DataUnit/ShiftUnit/clk_out80MHz
+    SLICE_X40Y77         FDRE                                         r  ReadUnit/DataUnit/ShiftUnit/ShiftRegister_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y77         FDRE (Prop_fdre_C_Q)         0.141    -0.465 r  ReadUnit/DataUnit/ShiftUnit/ShiftRegister_reg[6]/Q
+                         net (fo=2, routed)           0.130    -0.335    ReceivedData_OBUF[6]
+    SLICE_X40Y78         FDRE                                         r  Temperature_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.918    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.163    -2.245 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.544    -1.702    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.673 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.828    -0.845    clock80MHz
+    SLICE_X40Y78         FDRE                                         r  Temperature_reg[6]/C
+                         clock pessimism              0.253    -0.592    
+    SLICE_X40Y78         FDRE (Hold_fdre_C_D)         0.070    -0.522    Temperature_reg[6]
+  -------------------------------------------------------------------
+                         required time                          0.522    
+                         arrival time                          -0.335    
+  -------------------------------------------------------------------
+                         slack                                  0.187    
+
+Slack (MET) :             0.207ns  (arrival time - required time)
+  Source:                 Temperature_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            SevenSegUnit/DisplayInput/Digit1_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out80MHz_Clock80MHz rise@0.000ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        0.336ns  (logic 0.186ns (55.337%)  route 0.150ns (44.663%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.037ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.841ns
+    Source Clock Delay      (SCD):    -0.603ns
+    Clock Pessimism Removal (CPR):    -0.275ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.690    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.379    -1.689 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.499    -1.190    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.164 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.561    -0.603    clock80MHz
+    SLICE_X39Y81         FDRE                                         r  Temperature_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y81         FDRE (Prop_fdre_C_Q)         0.141    -0.462 f  Temperature_reg[4]/Q
+                         net (fo=9, routed)           0.150    -0.312    SevenSegUnit/DisplayInput/Temperature[4]
+    SLICE_X37Y81         LUT6 (Prop_lut6_I5_O)        0.045    -0.267 r  SevenSegUnit/DisplayInput/Digit1[7]_i_1/O
+                         net (fo=1, routed)           0.000    -0.267    SevenSegUnit/DisplayInput/D1[7]
+    SLICE_X37Y81         FDRE                                         r  SevenSegUnit/DisplayInput/Digit1_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.918    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.163    -2.245 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.544    -1.702    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.673 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.832    -0.841    SevenSegUnit/DisplayInput/CLK
+    SLICE_X37Y81         FDRE                                         r  SevenSegUnit/DisplayInput/Digit1_reg[7]/C
+                         clock pessimism              0.275    -0.566    
+    SLICE_X37Y81         FDRE (Hold_fdre_C_D)         0.092    -0.474    SevenSegUnit/DisplayInput/Digit1_reg[7]
+  -------------------------------------------------------------------
+                         required time                          0.474    
+                         arrival time                          -0.267    
+  -------------------------------------------------------------------
+                         slack                                  0.207    
+
+Slack (MET) :             0.213ns  (arrival time - required time)
+  Source:                 ReadUnit/ControlUnit/DataCounter_reg[1]/C
+                            (rising edge-triggered cell FDSE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            ReadUnit/ControlUnit/DataCounter_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out80MHz_Clock80MHz rise@0.000ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        0.334ns  (logic 0.246ns (73.561%)  route 0.088ns (26.439%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.846ns
+    Source Clock Delay      (SCD):    -0.605ns
+    Clock Pessimism Removal (CPR):    -0.241ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.690    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.379    -1.689 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.499    -1.190    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.164 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.559    -0.605    ReadUnit/ControlUnit/clk_out80MHz
+    SLICE_X42Y79         FDSE                                         r  ReadUnit/ControlUnit/DataCounter_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y79         FDSE (Prop_fdse_C_Q)         0.148    -0.457 r  ReadUnit/ControlUnit/DataCounter_reg[1]/Q
+                         net (fo=7, routed)           0.088    -0.369    ReadUnit/ControlUnit/DataCounter_reg_n_0_[1]
+    SLICE_X42Y79         LUT6 (Prop_lut6_I1_O)        0.098    -0.271 r  ReadUnit/ControlUnit/DataCounter[2]_i_1/O
+                         net (fo=1, routed)           0.000    -0.271    ReadUnit/ControlUnit/DataCounter[2]_i_1_n_0
+    SLICE_X42Y79         FDRE                                         r  ReadUnit/ControlUnit/DataCounter_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.918    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.163    -2.245 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.544    -1.702    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.673 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.827    -0.846    ReadUnit/ControlUnit/clk_out80MHz
+    SLICE_X42Y79         FDRE                                         r  ReadUnit/ControlUnit/DataCounter_reg[2]/C
+                         clock pessimism              0.241    -0.605    
+    SLICE_X42Y79         FDRE (Hold_fdre_C_D)         0.121    -0.484    ReadUnit/ControlUnit/DataCounter_reg[2]
+  -------------------------------------------------------------------
+                         required time                          0.484    
+                         arrival time                          -0.271    
+  -------------------------------------------------------------------
+                         slack                                  0.213    
+
+Slack (MET) :             0.221ns  (arrival time - required time)
+  Source:                 ReadUnit/ControlUnit/DataCounter_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            ReadUnit/ControlUnit/FSM_onehot_State_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out80MHz_Clock80MHz rise@0.000ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        0.355ns  (logic 0.209ns (58.809%)  route 0.146ns (41.191%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.847ns
+    Source Clock Delay      (SCD):    -0.605ns
+    Clock Pessimism Removal (CPR):    -0.255ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.690    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.379    -1.689 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.499    -1.190    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.164 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.559    -0.605    ReadUnit/ControlUnit/clk_out80MHz
+    SLICE_X42Y79         FDRE                                         r  ReadUnit/ControlUnit/DataCounter_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y79         FDRE (Prop_fdre_C_Q)         0.164    -0.441 r  ReadUnit/ControlUnit/DataCounter_reg[2]/Q
+                         net (fo=6, routed)           0.146    -0.295    ReadUnit/ControlUnit/DataCounter_reg_n_0_[2]
+    SLICE_X42Y78         LUT6 (Prop_lut6_I4_O)        0.045    -0.250 r  ReadUnit/ControlUnit/FSM_onehot_State[3]_i_1/O
+                         net (fo=1, routed)           0.000    -0.250    ReadUnit/ControlUnit/FSM_onehot_State[3]_i_1_n_0
+    SLICE_X42Y78         FDRE                                         r  ReadUnit/ControlUnit/FSM_onehot_State_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.918    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.163    -2.245 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.544    -1.702    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.673 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.826    -0.847    ReadUnit/ControlUnit/clk_out80MHz
+    SLICE_X42Y78         FDRE                                         r  ReadUnit/ControlUnit/FSM_onehot_State_reg[3]/C
+                         clock pessimism              0.255    -0.592    
+    SLICE_X42Y78         FDRE (Hold_fdre_C_D)         0.121    -0.471    ReadUnit/ControlUnit/FSM_onehot_State_reg[3]
+  -------------------------------------------------------------------
+                         required time                          0.471    
+                         arrival time                          -0.250    
+  -------------------------------------------------------------------
+                         slack                                  0.221    
+
+Slack (MET) :             0.224ns  (arrival time - required time)
+  Source:                 ReadUnit/ControlUnit/OneShotPositiveUnit/State_reg[0]/C
+                            (rising edge-triggered cell FDPE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            ReadUnit/ControlUnit/FSM_onehot_State_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out80MHz_Clock80MHz rise@0.000ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        0.331ns  (logic 0.186ns (56.270%)  route 0.145ns (43.730%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.846ns
+    Source Clock Delay      (SCD):    -0.606ns
+    Clock Pessimism Removal (CPR):    -0.255ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.690    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.379    -1.689 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.499    -1.190    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.164 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.558    -0.606    ReadUnit/ControlUnit/OneShotPositiveUnit/clk_out80MHz
+    SLICE_X43Y77         FDPE                                         r  ReadUnit/ControlUnit/OneShotPositiveUnit/State_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y77         FDPE (Prop_fdpe_C_Q)         0.141    -0.465 f  ReadUnit/ControlUnit/OneShotPositiveUnit/State_reg[0]/Q
+                         net (fo=7, routed)           0.145    -0.321    ReadUnit/ControlUnit/OneShotNegativeUnit/FSM_onehot_State_reg[8][0]
+    SLICE_X43Y79         LUT6 (Prop_lut6_I5_O)        0.045    -0.276 r  ReadUnit/ControlUnit/OneShotNegativeUnit/FSM_onehot_State[8]_i_1/O
+                         net (fo=1, routed)           0.000    -0.276    ReadUnit/ControlUnit/OneShotNegativeUnit_n_2
+    SLICE_X43Y79         FDRE                                         r  ReadUnit/ControlUnit/FSM_onehot_State_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.918    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.163    -2.245 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.544    -1.702    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.673 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.827    -0.846    ReadUnit/ControlUnit/clk_out80MHz
+    SLICE_X43Y79         FDRE                                         r  ReadUnit/ControlUnit/FSM_onehot_State_reg[8]/C
+                         clock pessimism              0.255    -0.591    
+    SLICE_X43Y79         FDRE (Hold_fdre_C_D)         0.092    -0.499    ReadUnit/ControlUnit/FSM_onehot_State_reg[8]
+  -------------------------------------------------------------------
+                         required time                          0.499    
+                         arrival time                          -0.276    
+  -------------------------------------------------------------------
+                         slack                                  0.224    
+
+Slack (MET) :             0.237ns  (arrival time - required time)
+  Source:                 ReadUnit/DataUnit/ShiftUnit/ShiftRegister_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            Temperature_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out80MHz_Clock80MHz rise@0.000ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        0.309ns  (logic 0.141ns (45.558%)  route 0.168ns (54.442%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.845ns
+    Source Clock Delay      (SCD):    -0.605ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.690    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.379    -1.689 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.499    -1.190    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.164 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.559    -0.605    ReadUnit/DataUnit/ShiftUnit/clk_out80MHz
+    SLICE_X40Y79         FDRE                                         r  ReadUnit/DataUnit/ShiftUnit/ShiftRegister_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y79         FDRE (Prop_fdre_C_Q)         0.141    -0.464 r  ReadUnit/DataUnit/ShiftUnit/ShiftRegister_reg[0]/Q
+                         net (fo=2, routed)           0.168    -0.296    ReceivedData_OBUF[0]
+    SLICE_X38Y78         FDRE                                         r  Temperature_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.918    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.163    -2.245 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.544    -1.702    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.673 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.828    -0.845    clock80MHz
+    SLICE_X38Y78         FDRE                                         r  Temperature_reg[0]/C
+                         clock pessimism              0.253    -0.592    
+    SLICE_X38Y78         FDRE (Hold_fdre_C_D)         0.059    -0.533    Temperature_reg[0]
+  -------------------------------------------------------------------
+                         required time                          0.533    
+                         arrival time                          -0.296    
+  -------------------------------------------------------------------
+                         slack                                  0.237    
+
+Slack (MET) :             0.242ns  (arrival time - required time)
+  Source:                 ReadUnit/DataUnit/ShiftUnit/ShiftRegister_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            Temperature_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out80MHz_Clock80MHz rise@0.000ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        0.328ns  (logic 0.141ns (43.016%)  route 0.187ns (56.984%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.842ns
+    Source Clock Delay      (SCD):    -0.605ns
+    Clock Pessimism Removal (CPR):    -0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.690    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.379    -1.689 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.499    -1.190    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.164 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.559    -0.605    ReadUnit/DataUnit/ShiftUnit/clk_out80MHz
+    SLICE_X40Y79         FDRE                                         r  ReadUnit/DataUnit/ShiftUnit/ShiftRegister_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X40Y79         FDRE (Prop_fdre_C_Q)         0.141    -0.464 r  ReadUnit/DataUnit/ShiftUnit/ShiftRegister_reg[7]/Q
+                         net (fo=2, routed)           0.187    -0.277    ReceivedData_OBUF[7]
+    SLICE_X40Y81         FDRE                                         r  Temperature_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.918    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.163    -2.245 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.544    -1.702    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.673 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.831    -0.842    clock80MHz
+    SLICE_X40Y81         FDRE                                         r  Temperature_reg[7]/C
+                         clock pessimism              0.253    -0.589    
+    SLICE_X40Y81         FDRE (Hold_fdre_C_D)         0.070    -0.519    Temperature_reg[7]
+  -------------------------------------------------------------------
+                         required time                          0.519    
+                         arrival time                          -0.277    
+  -------------------------------------------------------------------
+                         slack                                  0.242    
+
+Slack (MET) :             0.245ns  (arrival time - required time)
+  Source:                 ReadUnit/ControlUnit/FSM_onehot_State_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Destination:            ReadUnit/ControlUnit/DataCounter_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out80MHz_Clock80MHz  {rise@0.000ns fall@6.250ns period=12.500ns})
+  Path Group:             clk_out80MHz_Clock80MHz
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out80MHz_Clock80MHz rise@0.000ns - clk_out80MHz_Clock80MHz rise@0.000ns)
+  Data Path Delay:        0.380ns  (logic 0.209ns (55.001%)  route 0.171ns (44.999%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.846ns
+    Source Clock Delay      (SCD):    -0.606ns
+    Clock Pessimism Removal (CPR):    -0.255ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.690    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.379    -1.689 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.499    -1.190    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026    -1.164 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.558    -0.606    ReadUnit/ControlUnit/clk_out80MHz
+    SLICE_X42Y78         FDRE                                         r  ReadUnit/ControlUnit/FSM_onehot_State_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y78         FDRE (Prop_fdre_C_Q)         0.164    -0.442 r  ReadUnit/ControlUnit/FSM_onehot_State_reg[3]/Q
+                         net (fo=9, routed)           0.171    -0.271    ReadUnit/ControlUnit/Select
+    SLICE_X42Y79         LUT4 (Prop_lut4_I1_O)        0.045    -0.226 r  ReadUnit/ControlUnit/DataCounter[0]_i_1/O
+                         net (fo=1, routed)           0.000    -0.226    ReadUnit/ControlUnit/DataCounter[0]_i_1_n_0
+    SLICE_X42Y79         FDRE                                         r  ReadUnit/ControlUnit/DataCounter_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out80MHz_Clock80MHz rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  Clock (IN)
+                         net (fo=0)                   0.000     0.000    SystemClockUnit/inst/clk_in100MHz
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  SystemClockUnit/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.918    SystemClockUnit/inst/clk_in100MHz_Clock80MHz
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.163    -2.245 r  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.544    -1.702    SystemClockUnit/inst/clk_out80MHz_Clock80MHz
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029    -1.673 r  SystemClockUnit/inst/clkout1_buf/O
+                         net (fo=160, routed)         0.827    -0.846    ReadUnit/ControlUnit/clk_out80MHz
+    SLICE_X42Y79         FDRE                                         r  ReadUnit/ControlUnit/DataCounter_reg[0]/C
+                         clock pessimism              0.255    -0.591    
+    SLICE_X42Y79         FDRE (Hold_fdre_C_D)         0.120    -0.471    ReadUnit/ControlUnit/DataCounter_reg[0]
+  -------------------------------------------------------------------
+                         required time                          0.471    
+                         arrival time                          -0.226    
+  -------------------------------------------------------------------
+                         slack                                  0.245    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out80MHz_Clock80MHz
+Waveform(ns):       { 0.000 6.250 }
+Period(ns):         12.500
+Sources:            { SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     BUFG/I              n/a            2.155         12.500      10.345     BUFGCTRL_X0Y16   SystemClockUnit/inst/clkout1_buf/I
+Min Period        n/a     MMCME2_ADV/CLKOUT0  n/a            1.249         12.500      11.251     MMCME2_ADV_X1Y2  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+Min Period        n/a     FDRE/C              n/a            1.000         12.500      11.500     SLICE_X44Y72     ReadUnit/BaudRateUnit/baud_count_reg[10]/C
+Min Period        n/a     FDRE/C              n/a            1.000         12.500      11.500     SLICE_X44Y72     ReadUnit/BaudRateUnit/baud_count_reg[11]/C
+Min Period        n/a     FDRE/C              n/a            1.000         12.500      11.500     SLICE_X44Y73     ReadUnit/BaudRateUnit/baud_count_reg[12]/C
+Min Period        n/a     FDRE/C              n/a            1.000         12.500      11.500     SLICE_X44Y73     ReadUnit/BaudRateUnit/baud_count_reg[13]/C
+Min Period        n/a     FDRE/C              n/a            1.000         12.500      11.500     SLICE_X44Y73     ReadUnit/BaudRateUnit/baud_count_reg[14]/C
+Min Period        n/a     FDRE/C              n/a            1.000         12.500      11.500     SLICE_X44Y73     ReadUnit/BaudRateUnit/baud_count_reg[15]/C
+Min Period        n/a     FDRE/C              n/a            1.000         12.500      11.500     SLICE_X44Y74     ReadUnit/BaudRateUnit/baud_count_reg[16]/C
+Min Period        n/a     FDRE/C              n/a            1.000         12.500      11.500     SLICE_X44Y74     ReadUnit/BaudRateUnit/baud_count_reg[17]/C
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       12.500      200.860    MMCME2_ADV_X1Y2  SystemClockUnit/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y72     ReadUnit/BaudRateUnit/baud_count_reg[10]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y72     ReadUnit/BaudRateUnit/baud_count_reg[11]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y73     ReadUnit/BaudRateUnit/baud_count_reg[12]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y73     ReadUnit/BaudRateUnit/baud_count_reg[13]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y73     ReadUnit/BaudRateUnit/baud_count_reg[14]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y73     ReadUnit/BaudRateUnit/baud_count_reg[15]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y74     ReadUnit/BaudRateUnit/baud_count_reg[16]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y74     ReadUnit/BaudRateUnit/baud_count_reg[17]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y74     ReadUnit/BaudRateUnit/baud_count_reg[18]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y74     ReadUnit/BaudRateUnit/baud_count_reg[19]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y72     ReadUnit/BaudRateUnit/baud_count_reg[10]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y72     ReadUnit/BaudRateUnit/baud_count_reg[11]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y74     ReadUnit/BaudRateUnit/baud_count_reg[16]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y74     ReadUnit/BaudRateUnit/baud_count_reg[17]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y74     ReadUnit/BaudRateUnit/baud_count_reg[18]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y74     ReadUnit/BaudRateUnit/baud_count_reg[19]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y70     ReadUnit/BaudRateUnit/baud_count_reg[1]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y75     ReadUnit/BaudRateUnit/baud_count_reg[20]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y75     ReadUnit/BaudRateUnit/baud_count_reg[21]/C
+High Pulse Width  Fast    FDRE/C              n/a            0.500         6.250       5.750      SLICE_X44Y75     ReadUnit/BaudRateUnit/baud_count_reg[22]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_Clock80MHz
+  To Clock:  clkfbout_Clock80MHz
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        7.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_Clock80MHz
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { SystemClockUnit/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I               n/a            2.155         10.000      7.845      BUFGCTRL_X0Y17   SystemClockUnit/inst/clkf_buf/I
+Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y2  SystemClockUnit/inst/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         10.000      8.751      MMCME2_ADV_X1Y2  SystemClockUnit/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       10.000      90.000     MMCME2_ADV_X1Y2  SystemClockUnit/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       10.000      203.360    MMCME2_ADV_X1Y2  SystemClockUnit/inst/mmcm_adv_inst/CLKFBOUT
+
+
+

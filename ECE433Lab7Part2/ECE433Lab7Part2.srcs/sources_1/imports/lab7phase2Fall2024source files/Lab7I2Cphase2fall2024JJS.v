@@ -18,9 +18,9 @@ output SCL, ClockLocked, DONE, inout SDA,
 output [7:0] ReceivedData, Transistors, Display);
 
 parameter BaudRate=20'd25000, ClockFrequency=30'd80000000;
- wire clock80MHz; 
+wire clock80MHz; 
 
-//Clock80MHz SystemClockUnit(.clk_in100MHz(Clock),.clk_out80MHz(clock80MHz), .locked(ClockLocked));
+Clock80MHz SystemClockUnit(.clk_in100MHz(Clock),.clk_out80MHz(clock80MHz), .locked(ClockLocked));
 
 PositiveClockedOneShot StartOneShot(Start, Reset, clock80MHz, StartReading) ;
 

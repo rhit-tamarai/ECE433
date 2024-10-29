@@ -51,15 +51,11 @@ PositiveClockedOneShot OneShotPositiveUnit(ClockI2C, Reset, clock, OneShotPositi
 
 //ACKbit always store the current bit from SDA
 reg ACKbit;
-always@(posedge clock)
+
+always@(posedge clock) begin
 	if(Reset==1) begin State<=InitialState; ACKbit<=1; end
 	else begin State<=NextState; 
 		if(OneShotPositive==1) ACKbit<=SDA; else ACKbit<=ACKbit; end
-	
-//next state block
-always @(posedge clock or posedge Reset) begin
-    if(Reset == 1) State <= InitialState;
-    else State <= NextState;
 end
 
 always @(*) begin
@@ -80,10 +76,10 @@ always @(*) begin
         if(OneShotPositive == 1) NextState <= CheckState;
         else NextState <= AcknowledgeWriteState;
     CheckState:
-        if(SDA == 1) NextState <= ReadState;
+        if(SDA == 0) NextState <= ReadState;
         else NextState <= InitialState;
     ReadState:
-        if(DataCounter == 2) NextState <= WaitState;
+        if(DataCounter == 1) NextState <= WaitState;
         else NextState <= ReadState;
     WaitState:
         if(OneShotNegative == 1) NextState <= AcknowledgeReadState;
@@ -109,7 +105,7 @@ always@(posedge clock)
     case (State)
         LoadState: if(OneShotNegative==1) DataCounter<=DataCounter-1'b1; else
                     DataCounter<=DataCounter;
-         WriteState: if(OneShotNegative==1) DataCounter<=DataCounter-1'b1; else
+        WriteState: if(OneShotNegative==1) DataCounter<=DataCounter-1'b1; else
         DataCounter<=DataCounter;
         ReadState: if(OneShotPositive==1) DataCounter<=DataCounter-1'b1; else
         DataCounter<=DataCounter;
@@ -126,18 +122,19 @@ always @(State or OneShotNegative) begin
         WriteLoad <= 0;
         Select <= 0;
         ShiftorHold <= 0;
-        StartStopAck <= 0;
+        StartStopAck <= 1;
         StartDelayLoop <= 0;
         DONE <= 0;
      end    
      StartState: begin  
         BaudEnable <= 0;
         ReadorWrite <= 0;
-        WriteLoad <= 0;
+        WriteLoad <= 1;
         Select <= 0;
         ShiftorHold <= 0;
         StartStopAck <= 0;
         StartDelayLoop <= 1;
+        DONE <= 0;
      end
      LoadState: begin  
         BaudEnable <= 1;
@@ -147,6 +144,7 @@ always @(State or OneShotNegative) begin
         ShiftorHold <= 0;
         StartStopAck <= 0;
         StartDelayLoop <= 0;
+        DONE <= 0;
      end
      WriteState: begin  
         BaudEnable <= 1;
@@ -156,6 +154,7 @@ always @(State or OneShotNegative) begin
         ShiftorHold <= OneShotNegative;
         StartStopAck <= 0;
         StartDelayLoop <= 0;
+        DONE <= 0;
      end
      AcknowledgeWriteState: begin  
         BaudEnable <= 1;
@@ -175,15 +174,17 @@ always @(State or OneShotNegative) begin
         ShiftorHold <= 0;
         StartStopAck <= 0;
         StartDelayLoop <= 0;
+        DONE <= 0;
      end
      ReadState: begin  
-        BaudEnable <= 0;
+        BaudEnable <= 1;
         ReadorWrite <= 1;
         WriteLoad <= 0;
         Select <= 0;
-        ShiftorHold <= 0;
+        ShiftorHold <= OneShotNegative;
         StartStopAck <= 0;
         StartDelayLoop <= 0;
+        DONE <= 0;
      end
      WaitState: begin  
         BaudEnable <= 1;
@@ -191,8 +192,9 @@ always @(State or OneShotNegative) begin
         WriteLoad <= 0;
         Select <= 0;
         ShiftorHold <= 0;
-        StartStopAck <= 1;
+        StartStopAck <= 0;
         StartDelayLoop <= 0;
+        DONE <= 0;
      end
      AcknowledgeReadState: begin  
         BaudEnable <= 1;
@@ -202,6 +204,7 @@ always @(State or OneShotNegative) begin
         ShiftorHold <= 0;
         StartStopAck <= 0;
         StartDelayLoop <= 0;
+        DONE <= 0;
      end
      TransitState: begin  
         BaudEnable <= 0;
@@ -211,6 +214,7 @@ always @(State or OneShotNegative) begin
         ShiftorHold <= 0;
         StartStopAck <= 0;
         StartDelayLoop <= 1;
+        DONE <= 0;
      end
      StopState: begin  
         BaudEnable <= 0;
