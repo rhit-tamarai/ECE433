@@ -2,3 +2,6 @@ Running: xsim.dir/I2C_Host_Controller_phase2_tb_behav/xsimk.exe -simmode gui -wd
 Design successfully loaded
 Design Loading Memory Usage: 6052 KB (Peak: 6052 KB)
 Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 6760 KB (Peak: 6760 KB)
+Simulation CPU Usage: 61 ms
