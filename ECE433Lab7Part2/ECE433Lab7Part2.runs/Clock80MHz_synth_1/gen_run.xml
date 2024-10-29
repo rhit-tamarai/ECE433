@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="Clock80MHz_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1730232612">
   <File Type="PA-TCL" Name="Clock80MHz.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Clock80MHz_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Clock80MHz_reports.tcl"/>
   <File Type="RDS-RDS" Name="Clock80MHz.vds"/>
   <File Type="RDS-UTIL" Name="Clock80MHz_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Clock80MHz_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Clock80MHz.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Clock80MHz_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Clock80MHz_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Clock80MHz">
     <File Path="$PSRCDIR/sources_1/ip/Clock80MHz/Clock80MHz.xci">
       <FileInfo>
@@ -42,9 +39,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
