@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Nov  4 12:38:24 2024
+# Process ID: 38584
+# Current directory: C:/Xilinx/ECE433/Term Project/ECE_433_Term_Project_Phase1/ECE_433_Term_Project_Phase1/ECE_433_Term_Project_Phase1.runs/Clock25MHz_synth_1
+# Command line: vivado.exe -log Clock25MHz.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Clock25MHz.tcl
+# Log file: C:/Xilinx/ECE433/Term Project/ECE_433_Term_Project_Phase1/ECE_433_Term_Project_Phase1/ECE_433_Term_Project_Phase1.runs/Clock25MHz_synth_1/Clock25MHz.vds
+# Journal file: C:/Xilinx/ECE433/Term Project/ECE_433_Term_Project_Phase1/ECE_433_Term_Project_Phase1/ECE_433_Term_Project_Phase1.runs/Clock25MHz_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Clock25MHz.tcl -notrace
